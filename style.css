@@ -1,36 +1,61 @@
+:root {
+  --colorbright: #ec1960;
+  --white: #ffffff;
+}
+
 body {
-    font-family: 'Nunito', sans-serif;font-size: 11px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    margin-top: 75px;
 }
 
 .button {
-  background-color: #606060;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.contentcontainer {
-  max-width: 1000px;
-  margin: auto;
+    background-color: #606060;
+    border: none;
+    color: white;
+    padding: 15px 15px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 1em;
 }
 
 .content {
-  max-width: 1000px;
-  margin: auto;
-    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.contentcontainer {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+
+h0 {
+    display: block;
+    margin-top: 1em;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h1{
+    display: block;
+    margin-top: 1em;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--colorbright);
 }
 
 .header {
-  padding: 60px;
-  text-align: center;
-  background: #ffffff;
-  color: #000000;
-  font-size: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    background-color: var(--colorbright);
+    color: white;
+    padding: 25px 25px 25px 25px;
 }
