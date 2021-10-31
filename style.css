@@ -1,5 +1,5 @@
 body {
-    font-family: 'Nunito', sans-serif;font-size: 22px;
+    font-family: 'Nunito', sans-serif;font-size: 11px;
 }
 
 .button {
@@ -14,16 +14,17 @@ body {
   margin: 4px 2px;
   cursor: pointer;
 }
-.content {
-  max-width: 500px;
+
+.contentcontainer {
+  max-width: 1000px;
   margin: auto;
     text-align: center;
 }
 
-.pdfshow {
-  width: 100%;
+.content {
+  max-width: 1000px;
   margin: auto;
-  text-align: center;
+    text-align: center;
 }
 
 .header {
