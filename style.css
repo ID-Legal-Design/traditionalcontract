@@ -1,6 +1,6 @@
 :root {
-  --colorbright: #ec1960;
-  --white: #ffffff;
+    --colorbright: #ec1960;
+    --white: #ffffff;
 }
 
 body {
@@ -43,7 +43,7 @@ h0 {
     font-weight: bold;
 }
 
-h1{
+h1 {
     display: block;
     margin-top: 1em;
     font-size: 19px;
@@ -58,4 +58,37 @@ h1{
     background-color: var(--colorbright);
     color: white;
     padding: 25px 25px 25px 25px;
+}
+
+/* legal list style */
+#legal-list {
+    counter-reset: section;
+}
+
+#legal-list h1:before {
+    counter-increment: section;
+    content: "Artikel " counter(section) " ";
+    margin: 0 0.5em 0 0;
+}
+
+#legal-list ol {
+    counter-reset: clause;
+    list-style: none outside none;
+    text-indent: -2em;
+}
+
+#legal-list ol li {
+    counter-increment: clause;
+}
+
+#legal-list ol li:before {
+    content: counter(section) "." counters(clause, ".") " ";
+    margin: 0 0.5em 0 0;
+}
+
+#legal-list ol li ol li {
+    list-style: none;
+}
+#legal-list ol li ol li:before {
+    content: " - "
 }
