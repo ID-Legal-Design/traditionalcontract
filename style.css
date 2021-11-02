@@ -1,5 +1,5 @@
 :root {
-    --colorbright: #ec1960;
+    --colorbright: #4472CA;
     --white: #ffffff;
 }
 
@@ -8,11 +8,21 @@ body {
     font-size: 11px;
     margin-top: 75px;
 }
+.content {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.contentcontainer {
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+}
 
 .button {
     background-color: #606060;
     border: none;
-    color: white;
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
@@ -21,20 +31,15 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     margin-top: 1em;
+    color: white;
 }
 
-.content {
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
+button.link {
+    background:none;
+    border:none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
 }
-
-.contentcontainer {
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-}
-
 
 h0 {
     display: block;
@@ -89,6 +94,7 @@ h1 {
 #legal-list ol li ol li {
     list-style: none;
 }
+
 #legal-list ol li ol li:before {
     content: " - "
 }
